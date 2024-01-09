@@ -163,5 +163,5 @@ tim
 
 idRAND = round(runif(1,100000,100000000))
 
-saveRDS(jmodel,paste("./2._results/jsample.full.allsp.model_15_",idRAND,".RDS", sep =''))
+saveRDS(jmodel,paste("results/jsample.full.allsp.model_15_",idRAND,".RDS", sep =''))
 

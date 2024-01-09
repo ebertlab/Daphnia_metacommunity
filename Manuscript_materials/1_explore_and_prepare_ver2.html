@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Maxime Dubart">
+
+<title>Summary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="1_explore_and_prepare_ver2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="1_explore_and_prepare_ver2_files/libs/quarto-html/quarto.js"></script>
+<script src="1_explore_and_prepare_ver2_files/libs/quarto-html/popper.min.js"></script>
+<script src="1_explore_and_prepare_ver2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="1_explore_and_prepare_ver2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="1_explore_and_prepare_ver2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="1_explore_and_prepare_ver2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="1_explore_and_prepare_ver2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="1_explore_and_prepare_ver2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="1_explore_and_prepare_ver2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Summary</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Maxime Dubart </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="prolog-files-summary" class="level3">
+<h3 class="anchored" data-anchor-id="prolog-files-summary">Prolog, files summary</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="st">"./raw_data/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "1982_2017_unsuitable_pools_only_ver2.csv" 
+ [2] "2009_2017-2_fish_ver2.csv"                
+ [3] "Daphnia_dynamics_1982_2017_2.csv"         
+ [4] "Data_hydroperiod_Means.csv"               
+ [5] "Island_measures_vers4.csv"                
+ [6] "MetapopData_pH_conductivity_1998_2017.csv"
+ [7] "plantcover_2013_2017.csv"                 
+ [8] "Pools_coordinates_2017_vers7.csv"         
+ [9] "Pools_hard_data_vers12.csv"               
+[10] "Pools_hard_data_vers12.xls"               
+[11] "READ_Me_Summary_of_raw_data_ver3.docx"    
+[12] "VIP_DEdata5.csv"                          </code></pre>
+</div>
+</div>
+<p>These are the raw data used for the entire study. Note that we changed format from .xls to .csv for some files (e.g., hard_data, because it is more easy to import into R without additional package)</p>
+<p>RDS files correspond to outputs from this script and are saved in folder “data”. Here is a list of the RDS files created.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="st">"./data/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "all_cov_scaled.RDS"                   
+ [2] "distance_matrix"                      
+ [3] "distance_matrix_groups"               
+ [4] "distances_matrix.RDS"                 
+ [5] "dry_wet_82-17_core.RDS"               
+ [6] "environment_PCA.RDS"                  
+ [7] "environmental_pca"                    
+ [8] "islandsGroups.RDS"                    
+ [9] "modifyDistanceMatrix.R"               
+[10] "occupancies_longispina_82-17_core.RDS"
+[11] "occupancies_magna_82-17_core.RDS"     
+[12] "occupancies_pulex_82-17_core.RDS"     
+[13] "revisit.longispina.RDS"               
+[14] "revisit.magna.RDS"                    
+[15] "revisit.pulex.RDS"                    
+[16] "sites.positions.RDS"                  </code></pre>
+</div>
+</div>
+</section>
+<section id="i.-occupancies-data" class="level2">
+<h2 class="anchored" data-anchor-id="i.-occupancies-data">I. Occupancies data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">#### Get occupancy data ####</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"raw_data/Daphnia_dynamics_1982_2017_2.csv"</span>, <span class="at">h =</span> T)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute total number of sites, and make distinction between sites sampled since 1982 and others (added after 1982)</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>nb.sites.total <span class="ot">=</span> <span class="fu">length</span>(<span class="fu">unique</span>(data<span class="sc">$</span>poolname))</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>id.sites.total <span class="ot">=</span> <span class="fu">as.character</span>(data<span class="sc">$</span>poolname)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>visites.bySite <span class="ot">=</span> <span class="fu">table</span>(data<span class="sc">$</span>poolname)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only ponds with a complete history</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>nb.visites <span class="ot">=</span> (<span class="dv">36</span> <span class="sc">*</span> <span class="dv">2</span>)  <span class="co"># 1982 -&gt; 2017 : 36 y * 2 samples</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>nb.sites.core <span class="ot">=</span> <span class="fu">sum</span>(visites.bySite <span class="sc">==</span> nb.visites)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>nb.sites.added <span class="ot">=</span> <span class="fu">sum</span>(visites.bySite <span class="sc">!=</span> nb.visites)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>id.sites.core <span class="ot">=</span> <span class="fu">names</span>(<span class="fu">which</span>(visites.bySite <span class="sc">==</span> nb.visites))</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>id.sites.added <span class="ot">=</span> <span class="fu">names</span>(<span class="fu">which</span>(visites.bySite <span class="sc">!=</span> nb.visites))</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Well, when looking into harddata file, N-28 is weird (because of split, right ?)  </span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Easier to remove it. (N-28A is already removed)</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>id.sites.core <span class="ot">&lt;-</span> id.sites.core[id.sites.core <span class="sc">!=</span> <span class="st">"N-28"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Splite samples S1 &amp; S2, create sites by years matrices by species &amp; by samples, and save them</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split samples</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data.sample1 <span class="ot">&lt;-</span> data[data<span class="sc">$</span>sample <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> <span class="fu">as.character</span>(data<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core, ]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>data.sample2 <span class="ot">&lt;-</span> data[data<span class="sc">$</span>sample <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="fu">as.character</span>(data<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core, ]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create sites by years matrix for the each species (x3) and for each visit (x2)</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>occupancy.magna.s1 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample1[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"magna"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"magna"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>occupancy.longispina.s1 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample1[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"longispina"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">value.var =</span> <span class="st">"longispina"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>occupancy.pulex.s1 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample1[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"pulex"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"pulex"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>occupancy.magna.s2 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample2[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"magna"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"magna"</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>occupancy.longispina.s2 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample2[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"longispina"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">value.var =</span> <span class="st">"longispina"</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>occupancy.pulex.s2 <span class="ot">&lt;-</span> <span class="fu">acast</span>(data.sample2[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"pulex"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"pulex"</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Then create lists &amp; save them as .RDS</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>occupancies.longispina<span class="fl">.82</span>_17.core <span class="ot">=</span> <span class="fu">list</span>(occupancy.longispina.s1, occupancy.longispina.s2)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>occupancies.magna<span class="fl">.82</span>_17.core <span class="ot">=</span> <span class="fu">list</span>(occupancy.magna.s1, occupancy.magna.s2)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>occupancies.pulex<span class="fl">.82</span>_17.core <span class="ot">=</span> <span class="fu">list</span>(occupancy.pulex.s1, occupancy.pulex.s2)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="do">## Create line number for islands groups</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(<span class="fu">list</span>(<span class="fu">grep</span>(<span class="st">"^F-|^FO-|^FS-|^FW-|^FSS-|^LA-"</span>, <span class="fu">rownames</span>(occupancy.magna.s1)),</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>             <span class="fu">grep</span>(<span class="st">"^G-"</span>, <span class="fu">rownames</span>(occupancy.magna.s1)),</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>             <span class="fu">grep</span>(<span class="st">"^K-|^M-|^LON-|^LONA-|^LG-"</span>, <span class="fu">rownames</span>(occupancy.magna.s1)),</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>             <span class="fu">grep</span>(<span class="st">"^N-"</span>, <span class="fu">rownames</span>(occupancy.magna.s1)),</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>             <span class="fu">grep</span>(<span class="st">"^SK-|^SKN-|^SKO-|^SKW-"</span>, <span class="fu">rownames</span>(occupancy.magna.s1))), <span class="st">"./data/islandsGroups.RDS"</span>)</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Let as comments, already done once, useless to do it each time</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(occupancies.longispina.82_17.core,</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co"># './data/occupancies_longispina_82-17_core.RDS')</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(occupancies.magna.82_17.core, './data/occupancies_magna_82-17_core.RDS')</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(occupancies.pulex.82_17.core, './data/occupancies_pulex_82-17_core.RDS')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ii.-take-a-look-at-sites-state-wd" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-take-a-look-at-sites-state-wd">II. Take a look at sites state (w/d)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sometimes, value is 'y ' instead of 'y', i replaced the former by the later Then, change to numeric</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># values : n = 0, y = 1</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>water <span class="ot">&lt;-</span> <span class="fu">as.character</span>(data<span class="sc">$</span>water)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>water[data<span class="sc">$</span>water <span class="sc">==</span> <span class="st">"y "</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(data<span class="sc">$</span>water)] <span class="ot">&lt;-</span> <span class="st">"y"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>water[data<span class="sc">$</span>water <span class="sc">==</span> <span class="st">"y"</span>] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>water[data<span class="sc">$</span>water <span class="sc">==</span> <span class="st">"n"</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>water <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(data<span class="sc">$</span>water)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># First, as previously, only take core sites</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>dt.sample1 <span class="ot">=</span> data[data<span class="sc">$</span>sample <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> <span class="fu">as.character</span>(data<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core, ]</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>dt.sample2 <span class="ot">=</span> data[data<span class="sc">$</span>sample <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="fu">as.character</span>(data<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Since dry/wet state only affects links between observations and the true state, more exactly, the detectability is the only thing which depends on those d/w states, and actually, it is estimated only in wet sites since we assume that detectability is 0 in dry site. Because of this, we can replace NA’s by dry or wet (needed for the model, it cannot deal with NA here) without any effect on estimates. I choosed to put dry (0).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create both matrices</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dt.sample1[dt.sample1<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">1982</span>, <span class="st">"water"</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>dt.sample1[<span class="fu">is.na</span>(dt.sample1<span class="sc">$</span>water), <span class="st">"water"</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>dt.sample2[<span class="fu">is.na</span>(dt.sample2<span class="sc">$</span>water), <span class="st">"water"</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>dry_wet_state.sample1 <span class="ot">&lt;-</span> <span class="fu">acast</span>(dt.sample1[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"water"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"water"</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dry_wet_state.sample2 <span class="ot">&lt;-</span> <span class="fu">acast</span>(dt.sample2[, <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"water"</span>, <span class="st">"poolname"</span>)], poolname <span class="sc">~</span> year, <span class="at">value.var =</span> <span class="st">"water"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># #Save d/w states </span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(list(dry_wet_state.sample1,dry_wet_state.sample2),'./data/dry_wet_82-17_core.RDS')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>For estimations, that does not really make sense to fit an additional parameter for the persistence in dry site since all ponds can go through cycles of dry/wet states within a season.</p>
+<p>Thus, these information should be used only in the detectability issue. Meaning, assuming that detection is zero in dry site, but species can be present (see V.2.1).</p>
+</section>
+<section id="iii.-spatialized-aspects" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-spatialized-aspects">III. Spatialized aspects</h2>
+<section id="iii.1-baseline-distance-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="iii.1-baseline-distance-matrix">III.1 Baseline distance matrix</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Need to include {geosphere} package to compute distances among sites; igraph can be used for doing</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># various things on the adjacency matrix (on the network) e.g., compute sites groups (modularity)</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geosphere)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#require(igraph)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Get sites positions &amp; keep only core sites</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>sites.position <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./raw_data/Pools_coordinates_2017_vers7.csv"</span>, <span class="at">h =</span> T, <span class="at">sep =</span> <span class="st">";"</span>, </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">dec =</span> <span class="st">","</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>sites.position.core <span class="ot">&lt;-</span> sites.position[sites.position<span class="sc">$</span>name <span class="sc">%in%</span> id.sites.core, ]</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>sites.position.added <span class="ot">&lt;-</span> sites.position[sites.position<span class="sc">$</span>name <span class="sc">%in%</span> id.sites.added, ]</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>sites.position.total <span class="ot">&lt;-</span> sites.position[sites.position<span class="sc">$</span>name <span class="sc">%in%</span> id.sites.total, ]</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Ordering site as other data...</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>sites.position.core <span class="ot">=</span> sites.position.core[<span class="fu">order</span>(sites.position.core<span class="sc">$</span>name),<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">14</span>,<span class="dv">11</span>)]</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(sites.position.core, <span class="st">"./data/sites.positions.RDS"</span>)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute distances among sites, output a distances matrix using distVincentEllipsoid function.</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co"># distance.euclidean=distm(sites.position.core[,c(2,3)], sites.position.core[,c(2,3)],fun=distVincentyEllipsoid )</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="co"># As previously, already done, unnecessary to do it again </span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(distance.euclidean,'./data/distances_matrix.RDS')</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot, not really readable + can be used to compute e.g., islands group</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="co"># g &lt;- graph.adjacency(distance.euclidean, weighted = T) lo &lt;-</span></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="co"># layout.norm(as.matrix(sites.position[,c(6,5)]))</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="do">## walktrap.community(g) plot(cluster_fast_greedy(as.undirected(g)),g, layout = lo, vertex.size = 1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note that for now, it is only a distance matrix. Can be used as a baseline to complexify connectivity matrix.</p>
+</section>
+</section>
+<section id="iv.-environmental-covariates" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-environmental-covariates">IV. Environmental covariates</h2>
+<section id="iv.1.-raw-data-change-scales-and-transform-to-approx.-gaussian-distribution." class="level3">
+<h3 class="anchored" data-anchor-id="iv.1.-raw-data-change-scales-and-transform-to-approx.-gaussian-distribution.">IV.1. Raw data, change scales and transform to approx. gaussian distribution.</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get data &amp; keep only core sites</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>sites.harddata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./raw_data/Pools_hard_data_vers12.csv"</span>,<span class="at">h=</span>T,<span class="at">sep=</span><span class="st">';'</span>,<span class="at">dec=</span><span class="st">','</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sites.harddata <span class="ot">&lt;-</span> sites.harddata[<span class="fu">as.character</span>(sites.harddata<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core,]</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only variable of interest and convert everything in meters</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>sites.harddata <span class="ot">&lt;-</span> sites.harddata[,<span class="fu">c</span>(<span class="st">'poolname'</span>,<span class="st">'surface_area'</span>,<span class="st">'depth'</span>,<span class="st">'height_aboveSea'</span>,<span class="st">'sometimes_submerged'</span>,<span class="st">'distance_toSea'</span>,<span class="st">'catchment_area'</span>)]</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>sites.harddata[,<span class="fu">c</span>(<span class="st">'height_aboveSea'</span>,<span class="st">'depth'</span>,<span class="st">'distance_toSea'</span>)] <span class="ot">&lt;-</span> sites.harddata[,<span class="fu">c</span>(<span class="st">'height_aboveSea'</span>,<span class="st">'depth'</span>,<span class="st">'distance_toSea'</span>)] <span class="sc">/</span> <span class="dv">100</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Plant cover, both variables are redondant, we can choose to use one or the other</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>sites.plantcover <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./raw_data/plantcover_2013_2017.csv"</span>,<span class="at">h=</span>T)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>sites.plantcover <span class="ot">&lt;-</span> sites.plantcover[<span class="fu">as.character</span>(sites.plantcover<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core,]</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>sites.plantcover<span class="sc">$</span>plants <span class="ot">&lt;-</span> <span class="fu">log10</span>(<span class="dv">1</span><span class="sc">+</span>sites.plantcover<span class="sc">$</span>plants)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>sites.plantcover<span class="sc">$</span>plants_rank <span class="ot">&lt;-</span> <span class="fu">log10</span>(sites.plantcover<span class="sc">$</span>plants_rank)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co"># sites.plantcover$plants &lt;- sqrt(sites.plantcover$plants)</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co"># sites.plantcover$plants_rank &lt;- sqrt(sites.plantcover$plants_rank)</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute mean and variance</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>sites.pcov <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">poolname=</span><span class="fu">rep</span>(<span class="st">""</span>, <span class="fu">length</span>(id.sites.core)))</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>sites.pcov[,<span class="fu">c</span>(<span class="st">'poolname'</span>,<span class="st">'mean_plants_percent'</span>,<span class="st">'mean_plants_rank'</span>)] <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.plantcover[,<span class="fu">c</span>(<span class="st">'plants'</span>,<span class="st">'plants_rank'</span>)], <span class="at">by =</span> <span class="fu">list</span>(sites.plantcover<span class="sc">$</span>poolname), mean, <span class="at">na.rm =</span> T)</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>sites.pcov[,<span class="fu">c</span>(<span class="st">'sd_plants_percent'</span>,<span class="st">'sd_plants_rank'</span>)] <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.plantcover[,<span class="fu">c</span>(<span class="st">'plants'</span>,<span class="st">'plants_rank'</span>)], <span class="at">by =</span> <span class="fu">list</span>(sites.plantcover<span class="sc">$</span>poolname), sd, <span class="at">na.rm =</span> T)[,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>]</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep percents</span></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>sites.pcov <span class="ot">&lt;-</span> sites.pcov[,<span class="fu">c</span>(<span class="st">'poolname'</span>,<span class="st">'mean_plants_percent'</span>,<span class="st">'sd_plants_percent'</span>)]</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="co"># pH/EC</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>sites.physicochim <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./raw_data/MetapopData_pH_conductivity_1998_2017.csv"</span>,<span class="at">h=</span>T)</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>sites.physicochim <span class="ot">&lt;-</span> sites.physicochim[<span class="fu">as.character</span>(sites.physicochim<span class="sc">$</span>poolname) <span class="sc">%in%</span> id.sites.core,]</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>sites.physicochim<span class="sc">$</span>conduct_uS <span class="ot">&lt;-</span> <span class="fu">log10</span>(sites.physicochim<span class="sc">$</span>conduct_uS)</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute mean &amp; var for EC and pH</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>sites.pc <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">poolname=</span><span class="fu">rep</span>(<span class="st">""</span>, <span class="fu">length</span>(id.sites.core)))</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>sites.pc[,<span class="fu">c</span>(<span class="st">'poolname'</span>,<span class="st">'mean_ec'</span>)] <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.physicochim<span class="sc">$</span>conduct_uS, <span class="at">by =</span> <span class="fu">list</span>(sites.physicochim<span class="sc">$</span>poolname), mean, <span class="at">na.rm =</span> T)</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>sites.pc<span class="sc">$</span>mean_pH <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.physicochim<span class="sc">$</span>pH, <span class="at">by =</span> <span class="fu">list</span>(sites.physicochim<span class="sc">$</span>poolname), mean, <span class="at">na.rm =</span> T)[,<span class="dv">2</span>]</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>sites.pc<span class="sc">$</span>sd_ec <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.physicochim<span class="sc">$</span>conduct_uS, <span class="at">by =</span> <span class="fu">list</span>(sites.physicochim<span class="sc">$</span>poolname), sd, <span class="at">na.rm =</span> T)[,<span class="dv">2</span>]</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>sites.pc<span class="sc">$</span>sd_pH <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(sites.physicochim<span class="sc">$</span>pH, <span class="at">by =</span> <span class="fu">list</span>(sites.physicochim<span class="sc">$</span>poolname), sd, <span class="at">na.rm =</span> T)[,<span class="dv">2</span>]</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a><span class="do">## Read Fish Data</span></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>sites.fishes <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"./raw_data/2009_2017-2_fish_ver2.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggregate all hard data</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># site.specific.cov &lt;- merge(merge(merge(sites.pc,sites.hydroperiod),sites.pcov),sites.harddata)</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>site.specific.cov <span class="ot">&lt;-</span> <span class="fu">merge</span>(<span class="fu">merge</span>(sites.pc,sites.pcov),sites.harddata)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a> <span class="co"># Histogram raw data</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>))</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>mean_ec, <span class="at">main =</span> <span class="st">"Mean EC"</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>mean_pH, <span class="at">main =</span> <span class="st">"Mean pH"</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>sd_ec, <span class="at">main =</span> <span class="st">"Sd. EC"</span>)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>sd_pH, <span class="at">main =</span> <span class="st">"Sd. pH"</span>)</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>mean_plants_percent , <span class="at">main =</span> <span class="st">"Mean % for plant cover"</span>)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>sd_plants_percent, <span class="at">main =</span> <span class="st">"Sd % plants cover"</span>)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>surface_area, <span class="at">main =</span> <span class="st">"Surface (m2)"</span>)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>depth, <span class="at">main =</span> <span class="st">"Depth (m)"</span>)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>height_aboveSea, <span class="at">main =</span> <span class="st">"Height above sea (m)"</span>)</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>distance_toSea, <span class="at">main =</span> <span class="st">"Dist. to sea (m)"</span>)</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a> <span class="fu">hist</span>(site.specific.cov<span class="sc">$</span>catchment_area, <span class="at">main =</span> <span class="st">"Catchment (m2)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Some transformations to approximate normal distributions (transformations are performed before anything else).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf <span class="ot">&lt;-</span> site.specific.cov</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf<span class="sc">$</span>surface_area <span class="ot">&lt;-</span> <span class="fu">log10</span>(site.specific.cov<span class="sc">$</span>surface_area)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf<span class="sc">$</span>depth <span class="ot">&lt;-</span> <span class="fu">log10</span>(site.specific.cov<span class="sc">$</span>depth)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf<span class="sc">$</span>height_aboveSea <span class="ot">&lt;-</span> <span class="fu">log10</span>(site.specific.cov<span class="sc">$</span>height_aboveSea)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf<span class="sc">$</span>distance_toSea <span class="ot">&lt;-</span> <span class="fu">log10</span>(site.specific.cov<span class="sc">$</span>distance_toSea)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>site.specific.cov.transf<span class="sc">$</span>catchment_area <span class="ot">&lt;-</span> <span class="fu">log10</span>(site.specific.cov<span class="sc">$</span>catchment_area)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram transformed data</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">3</span>))</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>mean_ec, <span class="at">main =</span> <span class="st">"Mean EC"</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>mean_pH, <span class="at">main =</span> <span class="st">"Mean pH"</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>sd_ec, <span class="at">main =</span> <span class="st">"Sd. EC"</span>)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>sd_pH, <span class="at">main =</span> <span class="st">"Sd. pH"</span>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>mean_plants_percent, <span class="at">main =</span> <span class="st">"Mean % for plant cover"</span>)</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>sd_plants_percent, <span class="at">main =</span> <span class="st">"SD % plants cover"</span>)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>surface_area, <span class="at">main =</span> <span class="st">"Surface (m2)"</span>)</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>depth, <span class="at">main =</span> <span class="st">"Depth (m)"</span>)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>height_aboveSea, <span class="at">main =</span> <span class="st">"Height above sea (m)"</span>)</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>distance_toSea, <span class="at">main =</span> <span class="st">"Dist. to sea (m)"</span>)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(site.specific.cov.transf<span class="sc">$</span>catchment_area, <span class="at">main =</span> <span class="st">"Catchment (m2)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="iv.2.-look-at-collinearity-reduce-dimensionality" class="level3">
+<h3 class="anchored" data-anchor-id="iv.2.-look-at-collinearity-reduce-dimensionality">IV.2. Look at collinearity &amp; reduce dimensionality</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(<span class="fu">cor</span>(site.specific.cov.transf[, <span class="sc">-</span><span class="dv">1</span>], <span class="at">use =</span> <span class="st">"na.or.complete"</span>), <span class="at">method =</span> <span class="st">"ellipse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardizing ([,c(-1)], because site names are removed)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>site.specific.cov.scaled <span class="ot">&lt;-</span> <span class="fu">scale</span>(site.specific.cov.transf[, <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>)])</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA (on all variable)</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">=</span> <span class="fu">prcomp</span>(site.specific.cov.scaled)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA (and kick out pH, catchment area)</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>pca_someOut <span class="ot">=</span> <span class="fu">prcomp</span>(site.specific.cov.scaled[,<span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="sc">-</span><span class="dv">12</span>)])</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualized eigenvalues &amp; var contrib to axes</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_eig</span>(pca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_eig</span>(pca_someOut)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-11-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Explained variance :</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">get_eigenvalue</span>(pca))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">eigenvalue</th>
+<th style="text-align: right;">variance.percent</th>
+<th style="text-align: right;">cumulative.variance.percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dim.1</td>
+<td style="text-align: right;">3.0471951</td>
+<td style="text-align: right;">25.393292</td>
+<td style="text-align: right;">25.39329</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.2</td>
+<td style="text-align: right;">2.2190511</td>
+<td style="text-align: right;">18.492093</td>
+<td style="text-align: right;">43.88538</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.3</td>
+<td style="text-align: right;">1.2003611</td>
+<td style="text-align: right;">10.003009</td>
+<td style="text-align: right;">53.88839</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.4</td>
+<td style="text-align: right;">1.0688200</td>
+<td style="text-align: right;">8.906833</td>
+<td style="text-align: right;">62.79523</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.5</td>
+<td style="text-align: right;">0.8776671</td>
+<td style="text-align: right;">7.313892</td>
+<td style="text-align: right;">70.10912</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.6</td>
+<td style="text-align: right;">0.8261584</td>
+<td style="text-align: right;">6.884653</td>
+<td style="text-align: right;">76.99377</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.7</td>
+<td style="text-align: right;">0.7684117</td>
+<td style="text-align: right;">6.403431</td>
+<td style="text-align: right;">83.39720</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.8</td>
+<td style="text-align: right;">0.6856742</td>
+<td style="text-align: right;">5.713952</td>
+<td style="text-align: right;">89.11116</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.9</td>
+<td style="text-align: right;">0.4241440</td>
+<td style="text-align: right;">3.534533</td>
+<td style="text-align: right;">92.64569</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.10</td>
+<td style="text-align: right;">0.3501614</td>
+<td style="text-align: right;">2.918011</td>
+<td style="text-align: right;">95.56370</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.11</td>
+<td style="text-align: right;">0.3182634</td>
+<td style="text-align: right;">2.652195</td>
+<td style="text-align: right;">98.21590</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.12</td>
+<td style="text-align: right;">0.2140925</td>
+<td style="text-align: right;">1.784104</td>
+<td style="text-align: right;">100.00000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">get_eigenvalue</span>(pca_someOut))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">eigenvalue</th>
+<th style="text-align: right;">variance.percent</th>
+<th style="text-align: right;">cumulative.variance.percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dim.1</td>
+<td style="text-align: right;">2.6093541</td>
+<td style="text-align: right;">26.093541</td>
+<td style="text-align: right;">26.09354</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.2</td>
+<td style="text-align: right;">1.7465482</td>
+<td style="text-align: right;">17.465482</td>
+<td style="text-align: right;">43.55902</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.3</td>
+<td style="text-align: right;">1.0234382</td>
+<td style="text-align: right;">10.234382</td>
+<td style="text-align: right;">53.79341</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.4</td>
+<td style="text-align: right;">1.0208412</td>
+<td style="text-align: right;">10.208412</td>
+<td style="text-align: right;">64.00182</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.5</td>
+<td style="text-align: right;">0.8176208</td>
+<td style="text-align: right;">8.176208</td>
+<td style="text-align: right;">72.17803</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.6</td>
+<td style="text-align: right;">0.7791388</td>
+<td style="text-align: right;">7.791388</td>
+<td style="text-align: right;">79.96941</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.7</td>
+<td style="text-align: right;">0.6890718</td>
+<td style="text-align: right;">6.890718</td>
+<td style="text-align: right;">86.86013</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.8</td>
+<td style="text-align: right;">0.5843473</td>
+<td style="text-align: right;">5.843473</td>
+<td style="text-align: right;">92.70360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dim.9</td>
+<td style="text-align: right;">0.3981060</td>
+<td style="text-align: right;">3.981060</td>
+<td style="text-align: right;">96.68466</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dim.10</td>
+<td style="text-align: right;">0.3315337</td>
+<td style="text-align: right;">3.315337</td>
+<td style="text-align: right;">100.00000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Broken-sticks (coming with the book of Borcard et al. 2011</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># http://www.davidzeleny.net/anadat-r/doku.php/en:start)</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">evplot</span>(pca<span class="sc">$</span>sdev<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-11-4.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>The two first PC axes explain ca. 44% of the total variance.</p>
+<p>Third and fourth one explain resp. ca. 10% and 9% ; compared to the % of variance brought by each variable (~ 100/12 var = 8.3%). It seems not interesting to keep them; using the “broken sticks” criterion, we should not keep them.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># With all cov.</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation circle</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(<span class="fu">fviz</span>(pca, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="at">repel =</span> T),</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz</span>(pca, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="at">repel =</span> T),</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz</span>(pca, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">4</span>), <span class="at">repel =</span> T), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="960"></p>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then four firsts axes</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(<span class="fu">fviz_contrib</span>(pca, <span class="at">axes =</span> <span class="dv">1</span>, <span class="st">"var"</span>),</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca, <span class="at">axes =</span> <span class="dv">2</span>, <span class="st">"var"</span>),</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca, <span class="at">axes =</span> <span class="dv">3</span>, <span class="st">"var"</span>),</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca, <span class="at">axes =</span> <span class="dv">4</span>, <span class="st">"var"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-12-2.png" class="img-fluid" width="960"></p>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Without pH, catchmentArea</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(<span class="fu">fviz</span>(pca_someOut, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="at">repel =</span> T),</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz</span>(pca_someOut, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="at">repel =</span> T),</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz</span>(pca_someOut, <span class="st">"var"</span>, <span class="at">axes =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">4</span>), <span class="at">repel =</span> T), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-12-3.png" class="img-fluid" width="960"></p>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then four firsts axes</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(<span class="fu">fviz_contrib</span>(pca_someOut, <span class="at">axes =</span> <span class="dv">1</span>, <span class="st">"var"</span>),</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca_someOut, <span class="at">axes =</span> <span class="dv">2</span>, <span class="st">"var"</span>),</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca_someOut, <span class="at">axes =</span> <span class="dv">3</span>, <span class="st">"var"</span>),</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>          <span class="fu">fviz_contrib</span>(pca_someOut, <span class="at">axes =</span> <span class="dv">4</span>, <span class="st">"var"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="1_explore_and_prepare_ver2_files/figure-html/unnamed-chunk-12-4.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+<p>From here, we have to choose how many axes to use, to sum up :</p>
+<ol type="1">
+<li><p>PC I : Reflect terrestrial vs.&nbsp;marine influence</p></li>
+<li><p>PC II : Reflect site geometry</p></li>
+<li><p>PC III / IV : Not clear, PC III is mainly drived by pH variance. PC IV, mainly drived by variation in plant cover</p></li>
+</ol>
+<p>We focus on PV I and PC II.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute coordinates in PC plan</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>site.specific.cov.PCAaxes <span class="ot">&lt;-</span> site.specific.cov.scaled <span class="sc">%*%</span> pca<span class="sc">$</span>rotation</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute coordinate in PC plan (without pH, catchmentArea)</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>site.specific.cov_withoutpHCatchment.PCAaxes <span class="ot">&lt;-</span> site.specific.cov.scaled[,<span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="sc">-</span><span class="dv">12</span>)] <span class="sc">%*%</span> pca_someOut<span class="sc">$</span>rotation</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Save all scaled cov</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(as.data.frame(site.specific.cov.scaled), "../3._Data/5b._Data_clean/all_cov_scaled.RDS")</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Save them (all, can select PC axes later)</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(site.specific.cov.PCAaxes, "./data/environment_PCA.RDS")</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co"># saveRDS(site.specific.cov_withoutpHCatchment.PCAaxes, "../3._Data/5b._Data_clean/environment_PCA_reduced.RDS")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="v.-preliminary-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="v.-preliminary-analysis">V. Preliminary analysis</h2>
+<section id="v.1.preliminary-estimates-of-detectability" class="level3">
+<h3 class="anchored" data-anchor-id="v.1.preliminary-estimates-of-detectability">V.1.Preliminary estimates of detectability</h3>
+<section id="v.2.1.-computing-likelihood-function" class="level4">
+<h4 class="anchored" data-anchor-id="v.2.1.-computing-likelihood-function">V.2.1. Computing Likelihood function</h4>
+<p>Let’s say, <span class="math inline">\(\psi\)</span> stand for the probability that a site is occupied, <span class="math inline">\(d_{w}\)</span> the probability of detecting species knowing presence. One assumption here, is that the occupancy status of a site do not change between repeats.</p>
+<p>Here, we have two visits for a given number of sites (say N, same site can be consider several times if it has been doubly-sampled more than once). Note that, I consider that overall metapopulation occupancy (<span class="math inline">\(\psi\)</span>) does not change among years.</p>
+<p>Therefore, there are 4 possible outcomes :</p>
+<ol type="1">
+<li><p>two non detection or absence (00): or species is not here, and therefore not detected, or present and not detected 2 times. So that <span class="math inline">\(P(X=00) = (1-\psi) + \psi (1-d_{w})^2\)</span></p></li>
+<li><p>(also .3, it is symmetric) one absence and one presence (01 or 10) : species is present, and detected one time only : <span class="math inline">\(P(X=01) = P(X=10) = \psi d_{w} (1-d_{w})\)</span></p></li>
+<li><p>two detection (11) : species is present, and detected two times : <span class="math inline">\(P(X=11) = \psi d_{w}^2\)</span></p></li>
+</ol>
+<p>If there is <strong>a</strong> (11), <strong>b</strong> (01), <strong>c</strong> (10), <strong>d</strong> (00), <span class="math inline">\(\mathbf{X} = x_{1},...,x_{n}\)</span> is the vector of observed values. Then the likelihood function reads : <span class="math display">\[\mathcal{L} ( \psi , d_{w} | x_{1},...,x_{n}) = \prod_{i=1}^{N} P(X = x_{i})\]</span> <span class="math display">\[\mathcal{L} ( \psi , d_{w} | x_{1},...,x_{n}) = P(X=11)^a P(X=01)^b P(X=10)^c P(X=00)^d\]</span></p>
+<p>Take the log : <span class="math display">\[log\;\mathcal{L} ( \psi , d_{w} |\; x_{1},...,x_{n}) = a.Log[P(X=11)]+(b+c).Log[P(X=01)]+d.Log[P(X=00)]\]</span></p>
+<p>Solving <span class="math inline">\(\frac{d\; log\mathcal{L} ( \psi , d_{w} | \mathbf{X})}{d \psi} = 0\)</span> for <span class="math inline">\(\psi\)</span> leads to : <span class="math display">\[\hat{\psi} = -\frac{a + b + c}{(a + b + c + d) (d_{w}-2) d_{w}}\]</span></p>
+<p>Then, we can replace <span class="math inline">\(\psi\)</span> by <span class="math inline">\(\hat{\psi}\)</span> in <span class="math inline">\(log\mathcal{L} ( \psi , d_{w} | \mathbf{X})\)</span>, and solving <span class="math inline">\(\frac{d\; log\mathcal{L} ( \psi , d_{w} | \mathbf{X})}{d\;d_{w}} = 0\)</span> for <span class="math inline">\(d_{w}\)</span>, which leads to : <span class="math display">\[\hat{d_{w}} = \frac{2a}{2a+b+c}\]</span></p>
+<p>This formula corresponds to the max. likelihood estimate of detectability. (Similar to MacKenzie et al., 2003)</p>
+<p>Interestingly, <span class="math inline">\(d\)</span> and <span class="math inline">\(\psi\)</span> do not enter in the last formula.</p>
+</section>
+<section id="v.1.1.-applying-the-likelihood-function-to-data" class="level4">
+<h4 class="anchored" data-anchor-id="v.1.1.-applying-the-likelihood-function-to-data">V.1.1. Applying the likelihood function to data</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read repeated visits</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>detectability <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"./raw_data/VIP_DEdata5.csv"</span>,<span class="at">header=</span>T,<span class="at">sep=</span><span class="st">';'</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove lines with NA (cannot be used, reduce dataset from 3690 lines to 3458)</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>detectability <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(detectability)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># In all case, we have to compute a, b (, c) and d for each species </span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Actually, distinguish between b &amp; c is useless. So I consider only 3 category : say a, b (=b+c), and d</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that, the 'd' category is also useless (disapear when computing max. likelihood estimate)</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Construct function</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>category <span class="ot">&lt;-</span> <span class="cf">function</span>(x){<span class="cf">if</span>(x[<span class="dv">1</span>]<span class="sc">==</span><span class="dv">0</span> <span class="sc">&amp;</span> x[<span class="dv">2</span>]<span class="sc">==</span><span class="dv">0</span>){<span class="fu">return</span>(<span class="st">'d'</span>)}<span class="cf">else</span> <span class="cf">if</span>(x[<span class="dv">1</span>]<span class="sc">==</span><span class="dv">1</span> <span class="sc">&amp;</span> x[<span class="dv">2</span>]<span class="sc">==</span><span class="dv">1</span>){<span class="fu">return</span>(<span class="st">'a'</span>)} <span class="cf">else</span> {<span class="fu">return</span>(<span class="st">'b'</span>)}}</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply to data </span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>detectability<span class="sc">$</span>M_categories <span class="ot">&lt;-</span> <span class="fu">apply</span>(detectability[,<span class="fu">c</span>(<span class="st">'magna_VIP'</span>,<span class="st">'magna_DE'</span>)], <span class="dv">1</span>, <span class="at">FUN =</span> category)</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>detectability<span class="sc">$</span>P_categories <span class="ot">&lt;-</span> <span class="fu">apply</span>(detectability[,<span class="fu">c</span>(<span class="st">'pulex_VIP'</span>,<span class="st">'pulex_DE'</span>)], <span class="dv">1</span>, <span class="at">FUN =</span> category)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>detectability<span class="sc">$</span>L_categories <span class="ot">&lt;-</span> <span class="fu">apply</span>(detectability[,<span class="fu">c</span>(<span class="st">'longispina_VIP'</span>,<span class="st">'longispina_DE'</span>)], <span class="dv">1</span>, <span class="at">FUN =</span> category)</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Over all years, detectability are : </span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>magna_detectability <span class="ot">&lt;-</span> <span class="fu">table</span>(detectability<span class="sc">$</span>M_categories)</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>pulex_detectability <span class="ot">&lt;-</span> <span class="fu">table</span>(detectability<span class="sc">$</span>P_categories)</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>longispina_detectability <span class="ot">&lt;-</span> <span class="fu">table</span>(detectability<span class="sc">$</span>L_categories)</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute dw</span></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>p.loglik <span class="ot">&lt;-</span> <span class="cf">function</span>(x){(<span class="dv">2</span><span class="sc">*</span>x[[<span class="st">'a'</span>]])<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>x[[<span class="st">'a'</span>]]<span class="sc">+</span>x[[<span class="st">'b'</span>]])}</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Could also compute expected occupancy, don't use it here</span></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="co"># psi.loglik &lt;- function(x){((2*x[['a']]+x[['b']])^2)/(4*x[['a']]*(x[['a']]+x[['b']]+x[['d']]))}</span></span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">data.frame</span>(<span class="st">"D.magna"</span> <span class="ot">=</span> <span class="fu">p.loglik</span>(magna_detectability),</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>           <span class="st">"D.pulex"</span> <span class="ot">=</span> <span class="fu">p.loglik</span>(pulex_detectability),</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>           <span class="st">"D.longispina"</span> <span class="ot">=</span> <span class="fu">p.loglik</span>(longispina_detectability), <span class="at">row.names =</span> <span class="st">"Detectability"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">D.magna</th>
+<th style="text-align: right;">D.pulex</th>
+<th style="text-align: right;">D.longispina</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Detectability</td>
+<td style="text-align: right;">0.8538283</td>
+<td style="text-align: right;">0.8009479</td>
+<td style="text-align: right;">0.8357222</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="do">## For profile likelihood estimations</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. longi when magna is here (indp. of pulex)</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(detectability <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(M_categories <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>)) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(L_categories))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  a   b   d 
+113  56 572 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g., longi when magna and pulex are there</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(detectability <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(P_categories <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>) <span class="sc">&amp;</span> M_categories <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>)) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(L_categories))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ a  b  d 
+ 4  7 26 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g., longi when magna and pulex are NOT there</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(detectability <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(P_categories <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'d'</span>) <span class="sc">&amp;</span> M_categories <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'d'</span>)) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(L_categories))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   a    b    d 
+ 248   79 2174 </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="v.2.-bayesian-model" class="level3">
+<h3 class="anchored" data-anchor-id="v.2.-bayesian-model">V.2. Bayesian model</h3>
+<p>A few general concepts of the bayesian model</p>
+<section id="v.2.1-model" class="level4">
+<h4 class="anchored" data-anchor-id="v.2.1-model">V.2.1 Model</h4>
+<section id="transitions-rates" class="level5">
+<h5 class="anchored" data-anchor-id="transitions-rates">Transitions rates</h5>
+<p>The idea here is to change from discrete time model (the one we use with snails) to a continuous time version here. That does not change lot a things, but at the end, we get rates that are the same than in the levins metapopulation model.</p>
+<p>Globally, we consider demographics rates : colonization : <span class="math inline">\(\gamma = c . p\)</span>, where <span class="math inline">\(p\)</span> is the metapopulation occupancy and <span class="math inline">\(c\)</span>, the per-capita colonization rate. Extinction is simply <span class="math inline">\(e\)</span>, which do not depends on <span class="math inline">\(p\)</span> (meaning, we do not consider rescue effect).</p>
+<p>Note that here, <span class="math inline">\(p\)</span>, is simply overall metapopulation occupancy (i.e.&nbsp;proportion of occupied sites, no spatial aspect)</p>
+<p>Thus, the model reads :</p>
+<ul>
+<li><p>For a <strong>occupied</strong> site at <span class="math inline">\(t_{1}\)</span> transitionning to <strong>empty</strong> at <span class="math inline">\(t_{2}\)</span> : <span class="math inline">\(P(1 \rightarrow 0) = (1-e^{-(\gamma+e)})(\frac{e}{\gamma+e})\)</span></p></li>
+<li><p>For a <strong>occupied</strong> site at <span class="math inline">\(t_{1}\)</span> transitionning to <strong>occupied</strong> at <span class="math inline">\(t_{2}\)</span> : <span class="math inline">\(P(1 \rightarrow 1) = 1-(1-e^{-(\gamma+e)})(\frac{e}{\gamma+e})\)</span></p></li>
+<li><p>For a <strong>empty</strong> site at <span class="math inline">\(t_{1}\)</span> transitionning to <strong>occupied</strong> at <span class="math inline">\(t_{2}\)</span> : <span class="math inline">\(P(0 \rightarrow 1) = (1-e^{-(\gamma+e)})(\frac{\gamma}{\gamma+e})\)</span></p></li>
+<li><p>For a <strong>empty</strong> site at <span class="math inline">\(t_{1}\)</span> transitionning to <strong>empty</strong> at <span class="math inline">\(t_{2}\)</span> : <span class="math inline">\(P(0 \rightarrow 0) = 1-(1-e^{-(\gamma+e)})(\frac{\gamma}{\gamma+e})\)</span></p></li>
+</ul>
+<p>Actually, we split this into two component, we fit separate <span class="math inline">\((c,e)\)</span> for the summer and <span class="math inline">\((c,e)\)</span> winter period.</p>
+</section>
+<section id="detectability" class="level5">
+<h5 class="anchored" data-anchor-id="detectability">Detectability</h5>
+<p>Idea behind the detectability layer is that observations are not perfects, we can miss a species when present. If we do not consider this biais in the model, we will overestimate the number of transitions and therefore demographic rates. So, we link the true occupancies ( <span class="math inline">\(x_{i,t}\)</span> a “latent” variable in the model, which are not observed) to the observations (<span class="math inline">\(y_{i,t}\)</span>).</p>
+<p>Transitions in the previous section refer to transitions among “true” states (<span class="math inline">\(x_{i,t}\)</span>), and the detectability layer link those true states (<span class="math inline">\(x_{i,t}\)</span>) to observed ones (<span class="math inline">\(y_{i,t}\)</span>).</p>
+<p>Then, the detectability (<span class="math inline">\(d\)</span>) is the probability of detecting a species knowing it is present.</p>
+<p>We split this into two detectabilities : <span class="math inline">\(d_{w}\)</span> in wet site, and <span class="math inline">\(d_{d}\)</span> in dry site, and assume that <span class="math inline">\(d_{d} = 0\)</span>. (Hereafter, <span class="math inline">\(d=d_{w}\)</span>)</p>
+<ul>
+<li><p>Thus, in wet sites : <span class="math inline">\(P(y_{i,t} = 1 | x_{i,t} = 1) = d\)</span>, whereas <span class="math inline">\(P(y_{i,t} = 0 | x_{i,t} = 1) = 1-d\)</span>. And, <span class="math inline">\(P(y_{i,t} = 0 | x_{i,t} = 0) = 1\)</span> and <span class="math inline">\(P(y_{i,t} = 1 | x_{i,t} = 0) = 0\)</span></p></li>
+<li><p>And, in dry sites : <span class="math inline">\(P(y_{i,t} = 1) = 0\)</span> and <span class="math inline">\(P(y_{i,t} = 0) = 1\)</span></p></li>
+</ul>
+</section>
+<section id="spatialization-aspects" class="level5">
+<h5 class="anchored" data-anchor-id="spatialization-aspects">Spatialization aspects</h5>
+<p>We include space here using the Euclidean Distance Matrix (say <span class="math inline">\(\textbf{D}\)</span>, where <span class="math inline">\(D_{ij} = D_{ji}\)</span> is the distance between <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>).</p>
+<p>As describe in III., <span class="math inline">\(\textbf{D}\)</span> is compute from GPS positions and using DistVincentEllipsoid function from distm() function ({geosphere} package).</p>
+<p>Now, in <span class="math inline">\(\gamma = c.p\)</span>, we cannot consider <span class="math inline">\(p\)</span> as being the same for everyone, and then, we need a site-specific <span class="math inline">\(p_{i}\)</span>.</p>
+<p>Classic way for that (with <span class="math inline">\(n\)</span> the number of site, <span class="math inline">\(\frac{1}{\alpha}\)</span> the mean colonization distance, and <span class="math inline">\(x_{j}\)</span> the ‘true’ occupancy status of site <span class="math inline">\(j\)</span>) : <span class="math display">\[p_{i} = \sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}\]</span></p>
+<p>Using this definition, <span class="math inline">\(c\)</span> has not anymore the same meaning that in Levins metapopulation model, so we scale <span class="math inline">\(p_{i}\)</span> such that <span class="math inline">\(c\)</span> becomes the same <span class="math inline">\(c\)</span> than in Levins. (I will write a small document on this). Under some assumptions, <span class="math inline">\(p_{i}\)</span> now reads: <span class="math display">\[p_{i} = \frac{\sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}}{\frac{1}{n} (\sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})}\]</span></p>
+<p>Explanation for this last forumla. We want to have a <span class="math inline">\(c\)</span> which is the same as in the Levins model. But in our case, <span class="math inline">\(p_i = \sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}\)</span>. Then we search equivalence between <span class="math inline">\(c p\)</span> and <span class="math inline">\(c' \sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}\)</span></p>
+<p><span class="math display">\[E[c p] = E[c' \sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}] \]</span> For the left part : <span class="math display">\[E[c \sum\limits_{}^n\frac{x_{i}}{n}] = c\; \frac{1}{n}\sum\limits_{}^n E[x_{i}] \]</span> For the right part : <span class="math display">\[E[c' \sum\limits_{j \ne i}^n x_{j}\; e^{-\alpha\; D_{ij}}] = c' \sum\limits_{}^n E[x_{j}]E[e^{-\alpha\; D_{ij}}] = c' \sum\limits_{}^n E[x_{j}]\; (\frac{1}{n^2}\; \sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})\]</span></p>
+<p>Well, equivalence between : <span class="math display">\[c\; \frac{1}{n}\sum\limits_{}^n E[x_{i}] \; and \; c' \sum\limits_{}^n E[x_{j}]\; (\frac{1}{n^2}\; \sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})\]</span></p>
+<p>Then <span class="math display">\[ \frac{1}{n}\;c = \frac{c'}{(\frac{1}{n^2}\; \sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})} \]</span></p>
+<p>And lastly <span class="math display">\[ c = \frac{c'}{(\frac{1}{n^2}\; \sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})*n} = \frac{c'}{(\frac{1}{n}\; \sum\limits_{i}\sum\limits_{j}e^{-\alpha\; D_{ij}})} \]</span></p>
+</section>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
